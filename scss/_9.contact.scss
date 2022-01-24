@@ -1,0 +1,86 @@
+
+.section-contact {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--bg-color);
+}
+
+.contact-info {
+    width: 25%;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+
+    &-icon-wrap {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 5rem;
+
+        &-icon {
+            color: var(--color-primary);
+            font-size: 4rem;
+
+            span {
+                margin-left: 1rem;
+                font-family: 'Cookie', cursive;
+            }
+        }
+
+        &-heading {
+            margin-top: 1rem;
+            line-height: 3rem;
+            font-size: calc(1.6rem + 1vh);
+            letter-spacing: 0.3rem;
+            color: var(--text-color);
+        }
+
+
+    }
+
+}
+
+.contact-form {
+    position: absolute;
+    width: 38%;
+    height: 450px;
+    top: 20%;
+    left: 50%;
+
+    &-message,
+    &-email,
+    &-name {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid var(--color-gold-white);
+        outline: none;
+        background-color: transparent;
+    }
+
+    &-email {
+        top: 20%;
+    }
+
+    &-message {
+        top: 40%;
+        height: 180px;
+    }
+
+    a {
+        padding: 1rem 2rem;
+        background-color: var(--color-gold-white);
+        position: absolute;
+        font-size: 1.5rem;
+        color: var(--color-white-gold);
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        left: 10%;
+        top: 90%;
+
+
+    }
+}

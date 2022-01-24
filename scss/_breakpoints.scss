@@ -1,0 +1,211 @@
+@media (max-width: 1200px) {
+    .header__content {
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .header__nav {
+        transform: translateX(150%);
+        width: 30%;
+    }
+
+    .services__cards--card {
+        width: 40%;        
+        position: relative;
+        margin-bottom: 5rem;
+        left: 0%;
+
+        &:hover {
+            transform: scale(1);
+        }
+
+        &:nth-child(2) {
+            transform: scale(1);
+        }
+        // transform: translate(-50%, -50%);
+    }
+
+    .products__content {
+        p {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__content {
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+    .header__nav {
+        transform: translateX(150%);
+        width: 50%;
+    }
+
+    
+}
+@media (max-width: 768px) {
+
+    .header__nav {
+        &--logo {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        &--menu {
+            top: 30%;
+            right: 30%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .header__content {
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 0.2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+    .header__nav {
+        transform: translateX(300%);
+        width: 100%;
+        transition: 0.5s ease-in-out;
+    }
+
+    .skills {
+        .para {
+            width: 80%;
+            letter-spacing: 0rem;
+        }
+    }
+
+    .skills {
+        .skill-1,
+        .skill-2,
+        .skill-3,
+        .skill-4 {
+            width: 100%;
+            position: relative;
+            left: 0;
+        }
+        }
+    
+        .about {
+            .img {
+                position: relative;
+                width: 100%;
+                margin-bottom: 3rem;
+    
+                &:hover img {
+                    transform: scale(1);
+                    filter: blur(0px);
+                }
+                
+                img {
+                    transition: all 0.5s ease-in-out;
+                    filter: blur(0px);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+    
+            &__content {
+                position: relative;
+                width: 100%;
+                margin-bottom: 5rem;
+            }
+        }
+    
+        .products__content {
+            p {
+                width: 100%;
+            }
+        }
+    .services {
+        .row {
+            width: 50%;
+        }
+    }
+        .services__cards--card {
+            width: 100%;
+            height: auto;
+            margin-bottom: 5rem;
+    
+            &:hover {
+                transform: scale(1);
+            }
+    
+            &:nth-child(2) {
+                transform: scale(1);
+            }
+        }
+    
+        .services__cards {
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+    
+        .row {
+            width: 90%;
+        }
+        .about {
+            width: 90%;
+        }
+    
+        .col-left {
+            width: 100% !important;
+            margin-bottom: 4rem;
+        }
+        .col-right {
+            width: 100% !important;
+            position: relative;
+    
+            input {
+                width: 100% !important;
+            }
+            textarea {
+                width: 100% !important;
+            }
+    
+            button {
+                margin-left: 0 !important;
+            }
+        }
+    
+    
+}
+@media (max-width: 500px) {
+    .header__nav {
+        &--logo {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        &--menu {
+            top: 30%;
+            right: 20%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+    .services {
+        .row {
+            width: 80%;
+        }
+    }
+    }

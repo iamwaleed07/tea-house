@@ -1,0 +1,72 @@
+// * Light colors
+html {
+
+    --box-shadow: rgb(238, 238, 238);
+    --color-text: rgb(100, 100, 100);
+    --color-text-light: rgb(37, 37, 37);
+    --color-text-dark: rgb(42, 42, 42);
+
+    --color-b: rgb(255, 255, 255);
+
+    --color-gold: gold;
+
+    --color-white-gold: rgb(255, 255, 255);
+
+    --color-quinary-m: rgba(255, 255, 255, 0.5);
+    --color-gold-white: #ffcc1d;
+
+    --transition-duration: all 0.3s ease-in-out;
+    // colro:ffcc1d;
+
+    --color-primary: #FFCC1D;
+
+    --text-color: #0F0E0E;
+    --bg-color: #E1F4F3;
+    --bg-nav: #0F0E0E;
+    
+    --font-family: 'Lobster', cursive;
+
+    --logo: url("../assets/logo.png");
+
+}
+
+
+// * Dark colors
+
+html[data-theme="dark"] {
+
+    --box-shadow: rgb(238, 238, 238);
+    --color-text-light: rgb(37, 37, 37);
+    --color-text-dark: rgb(42, 42, 42);
+
+    --text-color: #F1F1F1;
+    --bg-nav: #F1F1F1;
+    --bg-color: #0F1123;
+    --logo: url("../assets/logo-dark.png");
+
+    --color-gold: white;
+
+    --color-b: rgb(255, 217, 0);
+
+    --color-white-gold: rgb(255, 217, 0);
+    --color-gold-white: rgb(255, 255, 255);
+
+    --color-quinary-m: rgba(255, 255, 255, 0.5);
+
+    --transition-duration: all 0.3s ease-in-out;
+}
+
+
+// responsive variables
+$macbook:1200px;
+$ipad-pro:800px;
+$ipad:705px;
+$iphone-x:400px;
+$iphone-5:375px;
+
+//responsive mixin
+@mixin responsive($display) {
+    @media (max-width:$display) {
+        @content;
+    }
+}

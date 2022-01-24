@@ -1,0 +1,61 @@
+
+
+
+::selection{
+    background-color: var(--color-primary);
+}
+
+@import "./1.resets";
+@import "./2.variables";
+@import "./3.utilities";
+@import "./4.header";
+@import "./5.about";
+@import "./6.menu";
+@import "./7.features";
+@import "./9.contact";
+@import "./10.clients";
+@import "./11.responsive";
+@import "./breakpoints";
+@import "./12.footer";
+
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after{
+    transition: all 0.5s !important;
+    transition-delay: 0 !important;
+}
+
+%bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%sec-padding{
+    padding: 8vh 0vw;
+}
+
+%sec-heading{
+    font-size: font-size(fs-medium);
+    font-weight: font-weight(fw-light);
+    letter-spacing: 0.2rem;
+    color: var(--color-text-dark);
+}
+
+%sec-para{
+    font-size: font-size(fs-small);
+    color:var(--color-text-dark);
+    font-family: "Balsamiq", cursive;
+    letter-spacing: 0.2rem;
+}
+
+%sec-h3{
+    font-size: font-size(fs-small);
+    color: var(--color-text-dark);
+}
+
+%sec-h4{
+    color: var(--color-text-dark);
+}

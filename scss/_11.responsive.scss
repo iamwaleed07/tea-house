@@ -1,0 +1,330 @@
+@include responsive($macbook) {
+
+    .featureboxs {
+        padding: 2rem 7vw;
+    }
+
+    .about-img {
+        height: 300px;
+    }
+
+    .about-content {
+        height: 400px;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        a {
+            margin-top: 3rem;
+        }
+    }
+
+    .section-products {
+        height: 230vh;
+    }
+
+    .products-card {
+        top: 35%;
+
+        &:nth-child(2) {
+            left: 60%;
+        }
+
+        &:nth-child(3) {
+            top: 70%;
+            left: 35%;
+        }
+    }
+
+    .section-cards {
+        height: 230vh;
+    }
+
+    .section-heading {
+        top: 13%;
+    }
+
+    .cards {
+        top: 25%;
+
+        &:nth-child(3) {
+            left: 60%;
+        }
+
+        &:nth-child(2) {
+            top: 76%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@include responsive($ipad-pro) {
+
+    .featureboxs {
+        padding: 2rem 7vw;
+        height: 43vh;
+
+        i {
+            margin-bottom: 0rem;
+        }
+
+        h2 {
+            margin-bottom: 0rem;
+        }
+    }
+
+    .section-featuress {
+        height: 86vh;
+        padding: 0rem 0rem;
+    }
+
+    .section-about {
+        // background-color: chartreuse;
+        height: 130vh;
+    }
+
+    .about-img {
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+
+    .about-content {
+        text-align: center;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    .section-products {
+        height: 230vh;
+    }
+
+    .products-card {
+        width: 300px;
+        height: 430px;
+
+        &:nth-child(2) {
+            left: 53%;
+        }
+
+        &:nth-child(3) {
+            top: 65%;
+            left: 30%;
+        }
+    }
+
+    .section-cards {
+        height: 300vh;
+        // background-color: gray;
+    }
+
+    .cards {
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:nth-child(2) {
+            top: 58%;
+        }
+
+        &:nth-child(3) {
+            top: 83%;
+            left: 50%;
+        }
+
+    }
+
+    .section-contact {
+        height: 150vh;
+    }
+
+
+    .contact-info,
+    .contact-form {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .contact-info {
+        text-align: center;
+        width: 70%;
+    }
+
+    .contact-form {
+        width: 60%;
+        top: 70%;
+    }
+}
+
+@include responsive($ipad) {
+
+    .slideshow {
+
+        &-content {
+            h2 {
+                line-height: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                line-height: 4rem;
+                margin-bottom: 3rem;
+
+            }
+        }
+    }
+
+    .section-featuress {
+        height: 200vh;
+    }
+
+    .featureboxs {
+        width: 70%;
+        height: 40vh;
+        padding: 4rem 5vw;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:nth-child(2) {
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(3) {
+            top: 61%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(4) {
+            top: 84%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .section-about {
+        height: 100vh;
+        padding: 0vh 0vw;
+    }
+
+    .about-img {
+        height: 200px;
+    }
+
+    .about-content {
+        top: 80%;
+
+    }
+
+    .section-products {
+        height: 280vh;
+    }
+
+    .products-content {
+        left: 50%;
+        width: 60%;
+        text-align: center;
+        top: 15%;
+        transform: translate(-50%, -50%);
+    }
+
+    .products-card {
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:nth-child(2) {
+            top: 57%;
+            left: 50%;
+        }
+
+        &:nth-child(3) {
+            top: 83%;
+            left: 50%;
+        }
+    }
+}
+
+@include responsive($iphone-x) {
+
+    .about-img {
+        top: 20%;
+        height: 180px;
+    }
+
+    .about-content {
+        width: 70%;
+        top: 70%;
+    }
+
+    .contact-info {
+        &-icon-wrap {
+            margin-bottom: 8rem;
+        }
+    }
+
+    .section-contact {
+        height: 180vh;
+    }
+
+    .contact-form {
+        width: 80%;
+
+        a {
+            top: 90%;
+            left: 50%;
+        }
+    }
+
+    .cards {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@include responsive($iphone-5) {
+
+    .contact-info {
+        width: 90%;
+
+        &-icon-wrap {
+            text-align: center;
+
+            &-heading {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+    .cards {
+        width: 300px;
+        height: 500px;
+
+        &:not(:first-child) {
+            margin-top: 8vh;
+        }
+    }
+
+    .section-heading {
+        .heading {
+            font-size: 2rem;
+        }
+    }
+
+
+
+
+
+
+
+}
